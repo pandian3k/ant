@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.sbi.wms.model.Exclusif_WMS">
+		<field name="recId" type="long" />
+		<field name="name" type="String" />
+		<field name="city" type="String" />
+		<field name="mobileno" type="long" />
+		<field name="email" type="String" />
+		<field name="agree" type="String" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+	</model>
+	<model name="com.sbi.wms.model.WMS_INB_BRANCH_MASTER">
+		<field name="REC_ID" type="long" />
+		<field name="BRANCH_CODE" type="String" />
+		<field name="BRANCH_NAME" type="String" />
+		<field name="MAIL_ADDRESS1" type="String" />
+		<field name="MAIL_ADDRESS2" type="String" />
+		<field name="MAIL_ADDRESS3" type="String" />
+		<field name="CITY" type="String" />
+		<field name="DISTRICT" type="String" />
+		<field name="STATE" type="String" />
+		<field name="PIN" type="String" />
+		<field name="CIRCLE" type="String" />
+		<field name="FOREX_TYPE" type="String" />
+		<field name="BRANCH_MANAGER" type="String" />
+		<field name="NO_OF_ATM" type="String" />
+		<field name="IFSC_CODE" type="String" />
+		<field name="STD_CODE" type="String" />
+		<field name="TELEPHONE" type="String" />
+		<field name="FAX_NO" type="String" />
+		<field name="EMAIL_ID" type="String" />
+		<field name="BUSSINESS_HOURS" type="String" />
+		<field name="WEEKLY_HOLIDAY" type="String" />
+		<field name="NON_BANKING_DAY" type="String" />
+		<field name="SUNDAY_BANKING" type="String" />
+		<field name="SUNDAY_BANKING_BUSSINESS" type="String" />
+		<field name="SWIFT_ENABLED" type="String" />
+		<field name="SWIFT_CODE" type="String" />
+		<field name="BRANCH_TYPE" type="String" />
+		<field name="LOCKER" type="String" />
+		<field name="GOLD_COIN" type="String" />
+		<field name="LAST_MOD_TIME" type="Date" />
+	</model>
+</model-hints>

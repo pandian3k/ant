@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.sbi.wms.model.impl.Exclusif_WMSModelImpl">
+		<attributes>
+			<id name="recId" />
+			<basic name="name" />
+			<basic name="city" />
+			<basic name="mobileno" />
+			<basic name="email" />
+			<basic name="agree" />
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="userId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.sbi.wms.model.impl.WMS_INB_BRANCH_MASTERModelImpl">
+		<attributes>
+			<id name="REC_ID" />
+			<basic name="BRANCH_CODE" />
+			<basic name="BRANCH_NAME" />
+			<basic name="MAIL_ADDRESS1" />
+			<basic name="MAIL_ADDRESS2" />
+			<basic name="MAIL_ADDRESS3" />
+			<basic name="CITY" />
+			<basic name="DISTRICT" />
+			<basic name="STATE" />
+			<basic name="PIN" />
+			<basic name="CIRCLE" />
+			<basic name="FOREX_TYPE" />
+			<basic name="BRANCH_MANAGER" />
+			<basic name="NO_OF_ATM" />
+			<basic name="IFSC_CODE" />
+			<basic name="STD_CODE" />
+			<basic name="TELEPHONE" />
+			<basic name="FAX_NO" />
+			<basic name="EMAIL_ID" />
+			<basic name="BUSSINESS_HOURS" />
+			<basic name="WEEKLY_HOLIDAY" />
+			<basic name="NON_BANKING_DAY" />
+			<basic name="SUNDAY_BANKING" />
+			<basic name="SUNDAY_BANKING_BUSSINESS" />
+			<basic name="SWIFT_ENABLED" />
+			<basic name="SWIFT_CODE" />
+			<basic name="BRANCH_TYPE" />
+			<basic name="LOCKER" />
+			<basic name="GOLD_COIN" />
+			<basic name="LAST_MOD_TIME">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.sbi.wms.model.impl.Exclusif_WMSImpl" name="Exclusif_WMS">
+		<table name="SBI_Exclusif_WMS" />
+		<attributes />
+	</entity>
+	<entity class="com.sbi.wms.model.impl.WMS_INB_BRANCH_MASTERImpl" name="WMS_INB_BRANCH_MASTER">
+		<table name="SBI_WMS_INB_BRANCH_MASTER" />
+		<attributes />
+	</entity>
+</entity-mappings>

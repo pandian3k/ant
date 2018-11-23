@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.sbi.wms.model.Exclusif_WMS" />
+	<import class="com.sbi.wms.model.WMS_INB_BRANCH_MASTER" />
+	<class name="com.sbi.wms.model.impl.Exclusif_WMSImpl" table="SBI_Exclusif_WMS">
+		<cache usage="read-write" />
+		<id name="recId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="city" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="mobileno" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="email" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="agree" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.sbi.wms.model.impl.WMS_INB_BRANCH_MASTERImpl" table="SBI_WMS_INB_BRANCH_MASTER">
+		<cache usage="read-write" />
+		<id name="REC_ID" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="BRANCH_CODE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="BRANCH_NAME" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="MAIL_ADDRESS1" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="MAIL_ADDRESS2" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="MAIL_ADDRESS3" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="CITY" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="DISTRICT" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="STATE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="PIN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="CIRCLE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="FOREX_TYPE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="BRANCH_MANAGER" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="NO_OF_ATM" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="IFSC_CODE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="STD_CODE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="TELEPHONE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="FAX_NO" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="EMAIL_ID" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="BUSSINESS_HOURS" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="WEEKLY_HOLIDAY" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="NON_BANKING_DAY" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="SUNDAY_BANKING" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="SUNDAY_BANKING_BUSSINESS" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="SWIFT_ENABLED" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="SWIFT_CODE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="BRANCH_TYPE" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="LOCKER" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="GOLD_COIN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="LAST_MOD_TIME" type="org.hibernate.type.TimestampType" />
+	</class>
+</hibernate-mapping>

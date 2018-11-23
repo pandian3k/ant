@@ -1,0 +1,1 @@
+Liferay.Service.register("Liferay.Service.SBI", "com.sbi.wms.service", "WealthManagementServices-portlet");

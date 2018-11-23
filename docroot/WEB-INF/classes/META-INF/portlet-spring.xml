@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.sbi.wms.service.Exclusif_WMSLocalService" class="com.sbi.wms.service.impl.Exclusif_WMSLocalServiceImpl" />
+	<bean id="com.sbi.wms.service.Exclusif_WMSService" class="com.sbi.wms.service.impl.Exclusif_WMSServiceImpl" />
+	<bean id="com.sbi.wms.service.persistence.Exclusif_WMSPersistence" class="com.sbi.wms.service.persistence.Exclusif_WMSPersistenceImpl" parent="basePersistence" />
+	<bean id="com.sbi.wms.service.WMS_INB_BRANCH_MASTERLocalService" class="com.sbi.wms.service.impl.WMS_INB_BRANCH_MASTERLocalServiceImpl" />
+	<bean id="com.sbi.wms.service.WMS_INB_BRANCH_MASTERService" class="com.sbi.wms.service.impl.WMS_INB_BRANCH_MASTERServiceImpl" />
+	<bean id="com.sbi.wms.service.persistence.WMS_INB_BRANCH_MASTERPersistence" class="com.sbi.wms.service.persistence.WMS_INB_BRANCH_MASTERPersistenceImpl" parent="basePersistence" />
+</beans>
