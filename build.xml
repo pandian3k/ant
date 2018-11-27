@@ -2,5 +2,5 @@
 <!DOCTYPE project>
 
 <project name="WealthManagementServices-portlet" basedir="." default="deploy">
-	<import file="D:\SATHYALIFERAY\liferay-plugins-sdk-6.1.20\portlets/build-common-portlet.xml" />
+	<import file="C:\Users\Raja\Downloads\liferay-plugins-sdk-6.1.1-ce-ga2-20121004092655026\liferay-plugins-sdk-6.1.1\portlets/build-common-portlet.xml" />
 </project>
